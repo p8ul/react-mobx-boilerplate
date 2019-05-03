@@ -1,0 +1,82 @@
+.property
+    font-family: $roboto !important
+    transition: transform .3s ease
+    .description
+        text-justify: center
+    .row__content
+        margin-top: 1em
+    .title
+        font-size: 1.2em        
+        font-weight: 700
+        color: black
+    .label
+        background-color: $blue
+        color: white
+        padding: 3px 7px 0px 7px // TRBL
+        border-radius: 3px
+    .price
+        span
+            font-size: 1.6em
+            font-weight: 700
+            color: black
+    &__card
+        min-height: 308px
+        padding: 0
+        margin-top: 12px
+        font-size: 12px
+        color: hsl(0, 0%, 60%)
+        border-radius: 4px
+        background-color: hsl(0, 0%, 100%)
+        display: flex
+        position: relative
+        width: 100%
+        transition: all .3s ease
+        &:hover
+            box-shadow: hsl(0, 0%, 80%) 0 0 16px
+        &:hover &__details
+            box-shadow: #a690d4ba 0 0 16px
+            top: 0
+            width: 100%
+            left: 0
+            box-shadow: none
+            position: relative
+        &__container
+        &__image
+            box-shadow: hsl(0, 0%, 80%) 0 0 16px
+        &__details            
+            padding: 0px 9px 0px 9px // TRBL
+            position: absolute
+            background-color: white
+            box-shadow: hsl(0, 0%, 80%) 0 0 16px
+            top: 33%
+            left: 9%
+            width: 83%
+            border-radius: 7px
+            transition: all 1s cubic‑bezier(0.175, 0.885, 0.32, 1.275)
+            &__footer
+                font-family: $open-sans
+                background: $blue
+                color: white !important
+                margin-left: -9px
+                margin-right: -9px
+                padding: 5px
+                box-shadow: 0px -1px 5px -1px rgba(0,0,0,0.32)
+                .title
+                    color: white
+            &__amenity_icon
+                background: white
+                box-shadow: hsl(0, 0%, 80%) 0 0 16px
+                border-radius: 50%
+                width: 40px !important
+                height: 38px !important
+                padding-top: 6px
+                &:hover
+                    box-shadow: #a690d4ba 0 0 16px
+
+.property-form
+    box-shadow: hsl(0, 0%, 80%) 0 0 16px;
+    padding: 12px
+
+.bg-blue
+    background: $blue !important
+    color: white !important
